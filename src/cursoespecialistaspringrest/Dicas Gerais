@@ -1,0 +1,22 @@
+#Maven
+  - mvn clean
+  - mvn package
+  - mvn dependency tree
+  - mvn dependeny resolve
+#Arquivo de Observações
+	- O Spring MVC é incluído nos projetos SpringBoot ao colocar o pacote WebStarter.
+	
+	
+@Controller
+public class MeuPrimeiroController {
+	
+	@GetMapping("/ola")
+	@ResponseBody
+	public String hello() {
+		return "Olá";
+	}
+
+} 
+
+O @Controller indica ao Spring que a classe é um controlador
+O @ResponseBody indica ao Spring que o retorno do metodo hello vai ser a string
